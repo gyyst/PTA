@@ -1,0 +1,6 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(作业2-2.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  源.c
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-2\作业2-2\源.c(10,2): warning C4091: “typedef ”: 没有声明变量时忽略“Int”的左侧
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-2\作业2-2\源.c(26,6): warning C4101: “i”: 未引用的局部变量
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-2\作业2-2\源.c(68,6): warning C4101: “i”: 未引用的局部变量
+  作业2-2.vcxproj -> C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-2\x64\Debug\作业1-2.exe
