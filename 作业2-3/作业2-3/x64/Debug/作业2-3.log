@@ -1,0 +1,12 @@
+﻿  源.c
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(8,2): warning C4091: “typedef ”: 没有声明变量时忽略“Int”的左侧
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(12,21): warning C4013: “malloc”未定义；假设外部返回 int
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(12,34): warning C4312: “类型强制转换”: 从“int”转换到更大的“Int *”
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(59,33): warning C4312: “类型强制转换”: 从“int”转换到更大的“Int *”
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(68,3): warning C4033: “jia”必须返回值
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(71,6): warning C4101: “i”: 未引用的局部变量
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(82,7): warning C4101: “head1”: 未引用的局部变量
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(82,16): warning C4101: “head2”: 未引用的局部变量
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(38): warning C4716: “insertNumber”: 必须返回一个值
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\作业2-3\源.c(69): warning C4716: “jia”: 必须返回一个值
+  作业2-3.vcxproj -> C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-3\x64\Debug\作业2-3.exe
