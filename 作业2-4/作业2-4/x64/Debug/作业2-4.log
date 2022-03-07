@@ -1,0 +1,4 @@
+﻿  源.c
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-4\作业2-4\源.c(47,34): warning C4101: “tmp”: 未引用的局部变量
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-4\作业2-4\源.c(405): warning C4715: “Compare”: 不是所有的控件路径都返回值
+  作业2-4.vcxproj -> C:\Users\Lenovo\OneDrive\C语言\PTA\作业2-4\x64\Debug\作业2-4.exe
