@@ -1,0 +1,5 @@
+﻿  源.c
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-3\作业1-3\源.c(10,2): warning C4091: “typedef ”: 没有声明变量时忽略“Int”的左侧
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-3\作业1-3\源.c(26,6): warning C4101: “i”: 未引用的局部变量
+C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-3\作业1-3\源.c(97,6): warning C4101: “i”: 未引用的局部变量
+  作业1-3.vcxproj -> C:\Users\Lenovo\OneDrive\C语言\PTA\作业1-3\x64\Debug\作业1-3.exe
