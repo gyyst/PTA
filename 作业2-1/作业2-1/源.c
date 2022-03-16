@@ -20,7 +20,14 @@ void Free(Int* head) {
 	free(prev);
 }
 
-
+//Int* createChain1() {
+//	Int* pre = NULL, * tmp = NULL, * head = NULL, * end = NULL;
+//	int i;
+//	head = (Int*)malloc(sizeof(Int));
+//	head->next = NULL;
+//	
+//	return head;
+//}
 
 Int* insertChain(Int* head,int a,int m) {
 	Int* tmp = head,*pre=NULL;
@@ -59,7 +66,20 @@ void display(Int* head, int m) {
 	}
     printf("\n");
 }
-
+// void selectMeber1(Int* head, int n) {
+// 	Int* p = NULL, * tmp = head, * pre = NULL;
+// 	int count;
+// 	while (tmp->next != tmp) {
+// 		for (count = 1; count < n; count++) {
+// 			pre = tmp;
+// 			tmp = tmp->next;
+// 		}
+// 		pre->next = tmp->next;
+// 		printf("%4d", tmp->a);
+// 		tmp = tmp->next;
+// 	}
+// 	printf("%4d", tmp->a);
+// }
 void selectMeber(Int* head,Int* head2, int n) {
 	Int* p = NULL, * tmp = head, * pre =tmp;
 	int count;
@@ -72,34 +92,32 @@ void selectMeber(Int* head,Int* head2, int n) {
 		}
 		pre->next = tmp->next;
         num=tmp->a;
+		//free(tmp);
+		//printf("%4d", tmp->a);
 		head2 = insertChain(head2, num,countmember);
 		countmember++;
 		tmp = tmp->next;
 	}
+	//printf("%4d", tmp->a);
 	head2 = insertChain(head2, tmp->a, countmember);
+	//head2 = xunhuan(head2);
 }
 
 int main() {
-	int m, n1,n2 ;
+	int m, n ;
 	Int* head = NULL, * head2 = NULL,* temp = NULL;
-	scanf("%d %d %d", &m,&n1,&n2);
+	scanf("%d", &m);
 	head = createChain(head, m);
 	head2 = createChain(head2,m);
-	
-		selectMeber(head,head2, n1);
-		head = createChain(head, m);
-		temp = head;
-		head = head2;
-		head2 = temp;
-    selectMeber(head,head2, n2);
+	while (scanf("%d", &n) != EOF) {
+		selectMeber(head,head2, n);
 		head = createChain(head, m);
 		temp = head;
 		head = head2;
 		head2 = temp;
 
+	}
 
 		display(head, m);
-
-
 	return 0;
 }
