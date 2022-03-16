@@ -20,14 +20,7 @@ void Free(Int* head) {
 	free(prev);
 }
 
-//Int* createChain1() {
-//	Int* pre = NULL, * tmp = NULL, * head = NULL, * end = NULL;
-//	int i;
-//	head = (Int*)malloc(sizeof(Int));
-//	head->next = NULL;
-//	
-//	return head;
-//}
+
 
 Int* insertChain(Int* head,int a,int m) {
 	Int* tmp = head,*pre=NULL;
@@ -57,41 +50,20 @@ Int* createChain(Int* head, int m) {
 	return head;
 }
 
-Int* xunhuan(Int* head) {
-	Int* tmp = head;
-	while (tmp->next != NULL) {
-		tmp=tmp->next;
-	
-	}
-	tmp->next = head;
-	return head;
-}
 void display(Int* head, int m) {
 	int i;
 	Int* p = head;
 	for (i =1; i <= m; i++) {
-		printf("%4d ", p->a);
+		printf("%4d", p->a);
 		p = p->next;
 	}
-	printf("\n");
+    printf("\n");
 }
-void selectMeber1(Int* head, int n) {
-	Int* p = NULL, * tmp = head, * pre = NULL;
-	int count;
-	while (tmp->next != tmp) {
-		for (count = 1; count < n; count++) {
-			pre = tmp;
-			tmp = tmp->next;
-		}
-		pre->next = tmp->next;
-		printf("%4d", tmp->a);
-		tmp = tmp->next;
-	}
-	printf("%4d", tmp->a);
-}
+
 void selectMeber(Int* head,Int* head2, int n) {
-	Int* p = NULL, * tmp = head, * pre = NULL;
+	Int* p = NULL, * tmp = head, * pre =tmp;
 	int count;
+    int num;
 	int countmember=1;
 	while (tmp->next != tmp) {
 		for (count = 1; count < n; count++) {
@@ -99,35 +71,35 @@ void selectMeber(Int* head,Int* head2, int n) {
 			tmp = tmp->next;
 		}
 		pre->next = tmp->next;
-		//free(tmp);
-		//printf("%4d", tmp->a);
-		head2 = insertChain(head2, tmp->a,countmember);
+        num=tmp->a;
+		head2 = insertChain(head2, num,countmember);
 		countmember++;
 		tmp = tmp->next;
 	}
-	//printf("%4d", tmp->a);
 	head2 = insertChain(head2, tmp->a, countmember);
-	//head2 = xunhuan(head2);
 }
 
 int main() {
-	int m, n ,count=0;
+	int m, n1,n2 ;
 	Int* head = NULL, * head2 = NULL,* temp = NULL;
-	scanf_s("%d", &m);
+	scanf("%d %d %d", &m,&n1,&n2);
 	head = createChain(head, m);
 	head2 = createChain(head2,m);
-	while (scanf_s("%d", &n) != EOF) {
-		selectMeber(head,head2, n);
+	
+		selectMeber(head,head2, n1);
 		head = createChain(head, m);
 		temp = head;
 		head = head2;
 		head2 = temp;
-		count++;
-	}
+    selectMeber(head,head2, n2);
+		head = createChain(head, m);
+		temp = head;
+		head = head2;
+		head2 = temp;
+
 
 		display(head, m);
 
-	/*free(head);
-	free(head);*/
+
 	return 0;
 }
